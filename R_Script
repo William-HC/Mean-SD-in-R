@@ -1,0 +1,22 @@
+# The function is useful to get the mean and SD of a given variable.
+
+
+# Function code:
+
+mean_sd<-function(x,decimals){
+
+  x_mean_sd  <-paste(round( mean(x) ,decimals),"(",round( sd(x)   ,decimals),")",sep="")
+  x_mean_sd
+  
+}
+
+
+
+# Example:
+
+vector   <-rnorm(1000,20,2)
+
+mean_sd(vector)
+
+
+# End
